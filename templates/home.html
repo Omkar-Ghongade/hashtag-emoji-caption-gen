@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#tag</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+</head>
+
+<body>
+
+    <style>
+
+body{
+    overflow: hidden;
+}
+
+    </style>
+
+    <div class="sec-01">
+        <h3 class="header-2-1">Experiences<br><span style="color: #2a2a2a;margin: 20%;"> that <span style="color: #4834d4;">win by design.</span></h3>
+
+        <div class="header-design">
+            <img src="/static/imgs/2.png" class="header-img">
+        </div>
+
+        <img src="/static/imgs/7.png" class="hero-img">
+
+        <img src="/static/imgs/Hover.png" class="hover-img">
+
+
+        <a href={{ url_for('index') }} style="margin:44% 0 0 5%";>
+            <img src="/static/imgs/arrow-right.png" class="arrow">
+        </a>
+    
+        <!-- <a style="margin:30% 0 0 20%;">
+            <img type="submit" value="Submit" src="/static/imgs/arrow-right.png" class="arrow" style="height:32px;transform:none;">
+        </a> -->
+        <form method="post" action="/" enctype="multipart/form-data">
+            <div class="file-drop-area">
+                <span class="file-msg js-set-number">IMPORT</span>
+                <input type="file" name="file" id="file-input" autocomplete="off" required>            
+            </div>
+            <input type="submit" value="------>" class="btn btn-info" id="submit-bt">
+
+            
+        </form>
+
+    </div>
+
+    <script>
+
+        var fileinput = document.querySelector('.file-input');
+        var filedroparea = document.querySelector('.file-drop-area');
+        var jssetnumber = document.querySelector('.js-set-number');
+        fileinput.addEventListener('dragenter', isactive);
+        fileinput.addEventListener('focus', isactive);
+        fileinput.addEventListener('click', isactive);
+
+        // back to normal state
+        fileinput.addEventListener('dragleave', isactive);
+        fileinput.addEventListener('blur', isactive);
+        fileinput.addEventListener('drop', isactive);
+
+        // add Class
+        function isactive() {
+            filedroparea.classList.add('is-active');
+        }
+
+        // change inner text
+        fileinput.addEventListener('change', function () {
+            var count = fileinput.files.length;
+            if (count === 1) {
+                // if single file then show file name
+                jssetnumber.innerText = fileinput.value.split('\\').pop();
+            } else {
+                // otherwise show number of files
+                jssetnumber.innerText = count + ' files selected';
+            }
+        });
+
+
+
+    </script>
+
+
+</body>
+
+</html>

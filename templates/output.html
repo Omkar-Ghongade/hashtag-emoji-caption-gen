@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#tag</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="sec-01">
+
+        <!--Comment text - Sample text -->
+        <h3 class="header-3-1" id="comment">Text goes<br> here.</h3>
+
+        <!--Uploaded image - Sample image -->
+        {% if filename %}
+        <div class="img-cont">
+            <img src="{{ url_for('display_image', filename=filename) }}" class="image-upload">
+            </div>
+        {% endif %}
+
+
+        
+        <h3 class="hashtags" id="hashtag">
+
+            {% for user in data %} 
+                {{user}}
+            {% endfor %}
+
+        </h3>
+
+        <!--Emojis text -  -->
+        <h3 class="emojis" id="emoji">😋😊</h3>
+
+        <a href={{ url_for('home') }} style="margin:4% 0 0 92%";>
+            <img src="/static/imgs/arrow-right.png" class="arrow">
+        </a>
+    
+
+    </div>
+
+</body>
+
+</html>

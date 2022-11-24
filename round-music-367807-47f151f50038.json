@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "round-music-367807",
+  "private_key_id": "47f151f5003812bc306bca9932f87dab52bde2c1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDe/tZ1zlsC0RBR\nMObdAk1v5LXjGRIC8ZK6e75/XtKzswwgAefIB2JR9qn4A71qDDR/inLS8Xo0MCLQ\nUHF10qm4CYfzFJK6ovTeRiUCqnq6m1lj2nuj80zlM6T11CY8rIC0BvTdqaScCqVR\nq7NDsucxxTuJg1BAGlgl7v9FQndOLViePsb+F4eidIU7jr5LtuABOq9O8RaoITyZ\nXSPQKYewsUfz2Rm7AhPXnky2+xYfXK8r9gm9e/wxe4wsS0NG9QxyrEfls2RchEOR\n1MUUtQANyarMiIDFHBABKXU7NPDtjaXUnVnyoebX7MW4kkcA+P9XUiHKMDIq+z1Z\nRfVI+tnVAgMBAAECggEAWBFH7GWvXtjnO1F3U6B1qbOnO8WqbdwvCRQW42G1EAAt\n0TQ/cCmuZFVowgjkFQ4164rnlzSEATljfmbOsGwe2A53kQI2gpwZ3fDQ7BEdADab\nIormWpUbcMepJeb/pOWxvKekrCgz2OaBbNRFK37rvKW6wi/IkVB2MKEHUriRup8E\nDBgDHrOSfgtWCEIjUIyooPiI+m8sG+/lD5c6yjPqjdFVjtSuGYLBARJ7lCeXkqCT\nFqNnk0QEdNggKwBHpH4wNdKqsmiiUsw5wo6r/YllpjLoUFv3DfinldyUEaDN1H8w\nAJbqpGRjWBMcm6cCvOnqCoxjvLbw9b3PErkdk1ZwfwKBgQD78WY2wBHvd8Bp0U4H\nL9OGCChxwmqi+eOjbAlCz0YKSt9rcU5qjiQbH2uhF/ItPMh2Wlqw3k4dkfQdUzSW\nqYElIhdqxXKWqOCiQJ+F4cBLoPHP+AR5d2KUN9jZ6zAGgqeU0yWdzPrjHy8Yud4q\nbysqbextnnvPbQTpuSIweAtwgwKBgQDilhs1+eqewMJmC6jxwUDm/tS/3wDnuBJ0\nV/qlE1F1cC+920ZxajYrC8BEL6/Ul4GGrrJ3BHY6mX1nT1bUcqCE6l7iXg2IMIF5\n+TrCs2jU2fQc43VDKKMARjH15+J2GSF+4WcB2Y1H+U3Ma6ZvArOgVlX4NXhXcJ97\nW1ZLFHrMxwKBgCe1Jy/v26PLUucaltqpHgRc2sr7IkVnbwo9p8QA2QAcRtQvOnWu\ny1/+9r6gAIpCrzGAEhUYJGWisD/C8mHgezs4AUrRrbqzCRxpZPr71ovU5OerJkFi\noIXNu361A4+zHehl0uLpAI21R331JV+4v6vjQUURml/ZxdF0XUAYW20zAoGBAJcP\nU9zMXOqxv+igZWWnXUmjIts4JTZWtZbzAJsFIg2VWX7NrUz3bl2MXAYZdLPavfO4\njCpkwx2WLtCtSEoikXmLdu6bnZHqJKfYzJ/5VC5zkBeiXQ8FDIamRbCXg5cQchBQ\n3YeSLmqJfqCGNFNWDcMbS/1KSIyi/PAUmJc9dBEJAoGBAL0VujR9jsJS2WXrMGr7\nmlcLOOCEVcVeBYkVOPo1l/zcZfPes6nXLc3ctvK334MTP64kNjnl4NHDmLAaxHE3\nOm0+vfmnKpYpc6mtEKO58Z7AzHUvvLAYJrS1yTRn/8mb1+jLTJqcw11ZmvuxL3/b\n8s3T9mtjan5Mo0Wm0Zfi7rrU\n-----END PRIVATE KEY-----\n",
+  "client_email": "visionapi101@round-music-367807.iam.gserviceaccount.com",
+  "client_id": "108583447392313799734",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/visionapi101%40round-music-367807.iam.gserviceaccount.com"
+}

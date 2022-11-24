@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#tag</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="sec-01">
+
+        <h3 class="header-1">How do we generate<span style="color:#3c40c6"> playful classes?</h3>
+
+        <div class="blank">
+
+            <h1 class="header-2">Abbastanza curioso da tradurlo da Google?</h1>
+
+            <button class="question">?</button>
+
+            <a href={{ url_for('index') }} style="margin:39% 0 0 20.43%" ;>
+                <img src="/static/imgs/arrow-right.png" class="arrow-2">
+            </a>
+
+
+            <h2 class="intro-para">
+                <span class="white">Okay fine,</span>
+                <span class="green"> Let us break it down.</span>
+            </h2>
+            <br>
+            <h2 class="intro-para-2">
+                <span class="white">We were just checking how curious<br> you are to understand the phrase.</span>
+                <br><br>
+            </h2>
+            <h2 class="intro-para-3">
+                <span class="white">Let's get back to the first question?</span>
+            </h2>
+
+
+        </div>
+
+        <script>
+
+
+            gsap.fromTo('.arrow-2', {
+                y: 0,
+                scale: 0,
+            },
+                {
+                    opacity: 1,
+                    scale: 1,
+                    scrollTrigger: {
+                        trigger: '.arrow-2',
+                        pin: '.sec-02',
+                        scrub: 2,
+                        start: 'center 51.8%',
+                        markers: false,
+                    }
+                })
+
+                gsap.fromTo('.question', {
+                y: 0,
+                scale: 0,
+            },
+                {
+                    opacity: 1,
+                    scale: 1,
+                    scrollTrigger: {
+                        trigger: '.question',
+                        pin: '.sec-02',
+                        scrub: 2,
+                        start: 'center 51.8%',
+                        markers: false,
+                    }
+                })
+
+            gsap.fromTo('.blank', {
+                y: 0,
+                scale: 0,
+            },
+                {
+                    opacity: 1,
+                    scale: 1.3,
+                    scrollTrigger: {
+                        trigger: '.blank',
+                        pin: '.sec-01',
+                        scrub: 2,
+                        start: 'center 56.8%',
+                        markers: false,
+                    }
+                })
+
+            gsap.fromTo('.header-2', {
+                y: 0,
+                opacity: 0,
+            },
+                {
+                    opacity: 1,
+                    scrollTrigger: {
+                        trigger: '.blank',
+                        scrub: 2,
+                        start: 'start 20%',
+                        markers: false,
+                    }
+                })
+
+            gsap.fromTo('.intro-para', {
+                y: 0,
+                opacity: 0,
+            },
+                {
+                    y: -50,
+                    opacity: 1,
+                    scrollTrigger: {
+                        trigger: '.header-2',
+                        scrub: 1,
+                        start: 'top 0',
+                        markers: false,
+                    }
+                })
+
+            gsap.fromTo('.intro-para-2', {
+                y: 0,
+                opacity: 0,
+            },
+                {
+                    y: -50,
+                    opacity: 1,
+                    scrollTrigger: {
+                        trigger: '.header-2',
+                        scrub: 2,
+                        start: 'top 0',
+                        markers: false,
+                    }
+                })
+
+            gsap.fromTo('.intro-para-3', {
+                y: 0,
+                opacity: 0,
+            },
+                {
+                    y: -50,
+                    opacity: 1,
+                    scrollTrigger: {
+                        trigger: '.intro-para-2',
+                        scrub: 2,
+                        start: 'top 5%',
+                        markers: false,
+                    }
+                })
+
+
+
+
+
+        </script>
+
+    </div>
+
+    <div class="sec-02">
+
+    </div>
+
+    <div class="sec-03">
+        <!-- <div class="gen"></div> -->
+
+        <h2 class="intro-para-5">
+            <span class="white">A platform to generate cool <span class="green">emojis, <br>comments and hastags
+                </span>based on <br>the imported image. </span>
+        </h2>
+        </h2>
+
+        <h2 class="intro-para-4">
+            <span class="white">It's us breaking down the<span class="green"> complex</span><br> pieces into a <span
+                    class="green">simpler </span>one.
+            </span>
+        </h2>
+
+        <img src="/static/imgs/flask.png" class="tech-img-1">
+        <img src="/static/imgs/gsap.png" class="tech-img-2">
+
+        <!-- <h1 class="header-5">Meet the <br>devs.</h1> -->
+
+        <img class="avatar-1" src="/static/imgs/1.png">
+        <img class="avatar-2" src="/static/imgs/2.png">
+
+        <h2 class="intro-para-6">
+            <span class="white">Piyush Shahapurkar
+            </span>
+        </h2>
+
+        <h2 class="front-end">
+            Front-End Developer
+        </h2>
+
+        <h2 class="intro-para-7">
+            <span class="white">Omkar Ghongade
+            </span>
+        </h2>
+
+        <h2 class="back-end">
+            Back-End Developer
+        </h2>
+
+        <img src="/static/imgs/html.png" class="tech-img-3">
+        <img src="/static/imgs/css.png" class="tech-img-4">
+        <img src="/static/imgs/js.png" class="tech-img-5">
+        <img src="/static/imgs/py.png" class="tech-img-6">
+
+        <h2 class="intro-para-8">
+            <span class="white">A platform to generate cool <span class="green">emojis, <br>comments and hastags
+                </span>based on <br>the imported image. </span>
+        </h2>
+
+        <a href={{ url_for('home') }} class="generate" style="font-family: 'monument regular',sans-serif;">GENERATE</a>
+
+    </div>
+
+
+</body>
+
+</html>
